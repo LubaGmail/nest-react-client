@@ -1,5 +1,6 @@
 import React from 'react'
 import { Table, TableHead, TableRow, TableBody, TableCell, TableFooter } from '@mui/material';
+import '../App.css'
 
 const BASE_URL = 'http://localhost:5000/courses';
 
@@ -24,22 +25,22 @@ const Courses = () => {
     }, [])
 
     return(
-        <>
+        <div>
            <CoursesList courses={courses} />
 
             {isLoading && <p>Loading...</p>}
             {err && <p>{err}</p>}
 
-        </>
+        </div>
     )
 }
 
 const CoursesList = ({courses}) => {
     return (
-        <>
+        <div>
             <h4>Available Courses</h4>
 
-            <Table>
+            <Table  className='centered'>
                 <TableHead>
                     <TableRow>
                         <TableCell>Id</TableCell>
@@ -59,7 +60,7 @@ const CoursesList = ({courses}) => {
                 }
                 </TableBody>
             </Table>
-        </>
+        </div>
     )
 }
 

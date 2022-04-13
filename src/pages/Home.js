@@ -4,9 +4,9 @@ const Home = () => {
 
     return(
 
-        <>
+        <div className='centered'>
             <h4>Home</h4>
-        </>
+        </div>
     )
 }
 
