@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color:floralwhite;
 }
 
 .centered {
@@ -34,7 +34,45 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+}
+
+form {
+  margin: 15px;
+  padding: 15px;
+}
+
+.newCourse {
+  padding: 10px;
+  margin: 10px;
+  min-width: 500px;
+}
+
+label, input {
+  width: 80px;
+  height: 25px;
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+}
+
+input[type=text] {
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid green;
+}
+
+.buttonDiv {
   margin: 20px;
 }
+
+
+
+
+
+
+
+
+
 
 

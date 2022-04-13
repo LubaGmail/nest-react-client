@@ -1,10 +1,14 @@
 import React from 'react'
+import Typography from '@mui/material/Typography';
+import '../App.css'
 
 const NoMatch = () => {
 
     return(
         <>
-            <h3>404</h3>
+            <Typography variant="h4" component="h4">
+                404
+            </Typography>
         </>
     )
 }
